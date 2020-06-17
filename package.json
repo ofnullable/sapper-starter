@@ -1,0 +1,24 @@
+{
+  "name": "sapper-starter",
+  "version": "0.0.1",
+  "description": "sapper starter template",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofnullable/sapper-starter.git"
+  },
+  "keywords": [
+    "sapper",
+    "svelte",
+    "template"
+  ],
+  "author": "ofnullable <ofnullable@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ofnullable/sapper-starter/issues"
+  },
+  "homepage": "https://github.com/ofnullable/sapper-starter#readme"
+}

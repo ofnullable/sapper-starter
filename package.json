@@ -4,6 +4,10 @@
   "description": "sapper starter template",
   "main": "src/server.js",
   "scripts": {
+    "dev": "sapper dev --hot",
+    "build": "sapper build",
+    "prestart": "NODE_ENV=production npm run build",
+    "start": "NODE_ENV=production node __sapper__/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,36 @@
   "bugs": {
     "url": "https://github.com/ofnullable/sapper-starter/issues"
   },
-  "homepage": "https://github.com/ofnullable/sapper-starter#readme"
+  "homepage": "https://github.com/ofnullable/sapper-starter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.2.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
+    "sapper": "^0.27.16",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "svelte": "^3.23.2",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^3.9.8",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0"
+  }
 }

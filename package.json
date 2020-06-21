@@ -4,7 +4,7 @@
   "description": "sapper starter template",
   "main": "src/server.js",
   "scripts": {
-    "dev": "sapper dev --hot",
+    "dev": "NODE_ENV=development sapper dev --hot",
     "build": "sapper build",
     "prestart": "NODE_ENV=production npm run build",
     "start": "NODE_ENV=production node __sapper__/build",
@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/ofnullable/sapper-starter#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.2",
+    "compression": "^1.7.4",
+    "polka": "^0.5.2",
+    "sirv": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -53,6 +56,7 @@
     "svelte": "^3.23.2",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.9.8",
+    "tailwindcss": "^1.4.6",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0"
   }

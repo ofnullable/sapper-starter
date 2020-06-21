@@ -15,4 +15,5 @@ module.exports = sveltePreprocess({
     ],
   },
   scss: sveltePreprocess.scss(),
+  postcss: sveltePreprocess.postcss(),
 });

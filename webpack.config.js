@@ -133,4 +133,10 @@ module.exports = {
       ],
     },
   },
+
+  serviceworker: {
+    mode,
+    entry: sapper.serviceworker.entry(),
+    output: sapper.serviceworker.output(),
+  },
 };

@@ -4,7 +4,7 @@
   "description": "sapper starter template",
   "main": "src/server.js",
   "scripts": {
-    "dev": "NODE_ENV=development sapper dev --hot",
+    "dev": "NODE_ENV=development sapper dev",
     "build": "sapper build",
     "prestart": "NODE_ENV=production npm run build",
     "start": "NODE_ENV=production node __sapper__/build",

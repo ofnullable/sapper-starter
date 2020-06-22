@@ -10,6 +10,5 @@ polka()
   .use(compression({ threshold: 0 }), sirv('static', { dev }), sapper.middleware())
   .listen(PORT, (err) => {
     if (err) console.error('Fail to start server 😭', err);
-
-    console.log(`🌟Express + Sapper Server running on ${PORT}🌟`);
+    console.log(`🌟Polka + Sapper Server running on ${PORT}🌟`);
   });

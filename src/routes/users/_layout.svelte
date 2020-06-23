@@ -1,8 +1,9 @@
 <script context="module">
   import { users } from '../../stores/users';
 
-  export async function preload() {
+  export async function preload(_, session) {
     const data = await users.loadUsers();
+    session.users = data;
     return { data };
   }
 </script>

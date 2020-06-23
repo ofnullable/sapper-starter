@@ -1,11 +1,12 @@
 <script>
   import { stores } from '@sapper/app';
-  const { preloading } = stores();
 
   import Header from '../layouts/Header';
   import Footer from '../layouts/Footer';
 
   import '../styles/app.scss';
+
+  const { preloading } = stores();
 </script>
 
 {#if $preloading}

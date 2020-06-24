@@ -2,8 +2,14 @@
   import { css } from 'emotion';
 
   export let name;
+  export let type = 'text';
   export let label;
   export let value;
+  export let required;
+
+  const handleInput = ({ target }) => {
+    value = type.match(/^(number|range)$/) ? +target.value : target.value;
+  };
 
   const inputWrapper = css`
     display: flex;
@@ -20,7 +26,7 @@
 
 <div class={[inputWrapper].join(' ')}>
   <label for={name}>{label}</label>
-  <input id={name} class="border border-gray-200 rounded" bind:value />
+  <input id={name} {required} {type} class="border border-gray-200 rounded" {value} on:input={handleInput} />
 </div>
 
 <style>

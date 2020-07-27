@@ -121,7 +121,7 @@ module.exports = {
           test: /\.(c|sa|sc)ss$/,
           use: [
             loaders.style(true),
-            { loader: loaders.css, options: { onlyLocals: true } },
+            { loader: loaders.css, options: { modules: { exportOnlyLocals: true } } },
             loaders.postcss,
             loaders.sass,
           ],
